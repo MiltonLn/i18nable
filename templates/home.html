@@ -1,10 +1,19 @@
 {% extends 'base.html' %}
 
-{% block panel_title %}
-    ¡Bienvenido a nuestro sitio!
-{% endblock panel_title %}
+{% block css %}
+    <style>
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 17px;
+        }
+    </style>
+{% endblock css %}
 
 {% block panel_content %}
+    <h1>¡Bienvenido a nuestro sitio!</h1>
+
     <p>Es un placer para nosotros tenerte aquí.</p>
 
     <p>
