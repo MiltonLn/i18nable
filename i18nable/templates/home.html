@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block css %}
+    <style>
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 17px;
+        }
+    </style>
+{% endblock css %}
+
+{% block panel_content %}
+    <h1>{% trans '¡Bienvenido a nuestro sitio!' %}</h1>
+    <p>{% trans 'Es un placer para nosotros tenerte aquí.' %}</p>
+
+    <p>
+        {% blocktrans trimmed %}
+            Este contenido fue escrito por {{ author }}
+        {% endblocktrans %}
+    </p>
+{% endblock panel_content %}
